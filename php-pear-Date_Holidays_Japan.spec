@@ -7,7 +7,7 @@ Summary:	%{_pearname} - Driver based class to calculate holidays in Japan
 Summary(pl.UTF-8):	%{_pearname} - klasa to obliczania dat świąt japońskich
 Name:		php-pear-%{_pearname}
 Version:	0.1.0
-Release:	0.1
+Release:	1
 License:	PHP License
 Group:		Development/Languages/PHP
 Source0:	http://pear.php.net/get/%{_pearname}-%{version}.tgz
@@ -20,11 +20,6 @@ Requires:	php-pear-Date_Holidays >= 0.20.1
 Requires:	php-pear-PEAR >= 1.4.0b1
 BuildArch:	noarch
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
-
-%if 0
-# exclude optional dependencies
-%define		_noautoreq	
-%endif
 
 %description
 Date_Holidays helps you calculate the dates and titles of holidays and
